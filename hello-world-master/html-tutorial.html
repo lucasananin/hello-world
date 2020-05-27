@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>HTML - Tutorial</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name="description" content="my w3 html tutorial">
+        <meta name="keywords" content="w3, html, tutorial, lucasananin">
+        <meta name="author" content="lucasananin">
+        <!-- <meta http-equiv="refresh" content="10"> -->
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script>
+            function funcTest() {
+                document.getElementById("top").style.color = "greenyellow"
+            }
+        </script>
+        <style>
+            body {
+                background-image: url("Images/bg2.png");
+                /* background-repeat: no-repeat; */
+                background-attachment: fixed;
+                /* background-size: cover; */
+                /* background-size: 100% 100%; */
+            }
+            a {
+                color: tomato;
+            }
+            table {
+                width: 30em;
+                /* border-collapse: collapse; */
+                border-spacing: 1em;
+            }
+            th, td {
+                border: solid orange;
+                padding: 0.5em; 
+            }
+            tr:nth-child(even) {
+                background-color: slateblue;
+            }
+            tr:nth-child(odd) {
+                background-color: tomato;
+            }
+            th {
+                background-color: dodgerblue;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: black; color: white;">
+        <!-- BASIC =========================================================== -->
+        <h1 id="top">Heading 1</h1>
+        <h2>Heading 2</h2>
+        <p>This is a paragraph and headings go from 1 to 6.</p><hr>
+
+        <a href="">Anchor or Link</a><br>
+        <img src="Images/balsamiq icon.png" alt="balsamiq icon.img" width="128px"><br>
+        <button title="This is a button, press me!">Button</button><hr>
+
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ul>
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ol>
+
+        <p title='this is a "title"'>This paragraph has a title.</p>
+        <pre>
+            This text is preformatted.
+
+                This text is preformatted.
+
+                    This text is preformatted.
+        </pre><hr>
+
+        <p>
+            <b>Bold</b> Text<br>
+            <strong>Strong</strong> Text<br>
+            <i>Italic</i> Text<br>
+            <em>Emphasized</em> Text<br>
+            <small>Small</small> Text<br>
+            <mark>Marked</mark> Text<br>
+            <del>Deleted</del> Text<br>
+            <ins>Inserted</ins> Text<br>
+            <sub>Subscripted</sub> Text<br>
+            <sup>Superscripted</sup> Text<br>
+        </p><hr>
+
+        <q>Quoted Text</q>
+        <blockquote>Blockquoted Text</blockquote>
+        <abbr title="Abbreviated">Abbr</abbr> Text
+        <address>Address Text</address>
+        <cite>Cite</cite> Text<br>
+        <bdo dir="rtl">Bi-Directional Override</bdo> Text<hr>
+
+        <a href="" target="_blank">Blank Link</a><br>
+        <a href="" target="_self">Self Link</a><br>
+        <a href="" title="This link has a title!">Title Link</a><br>
+        <a href="" title="image link">
+            <img src="Images/balsamiq icon.png" alt="balsamiq icon link">
+        </a><br>
+        <a href="#top">Bookmarked Link (#top)</a>
+        <img src="" alt=""><hr>
+
+        <div style="width: 512px;">
+            <img src="Images/andrei.gif" alt="Andrei.gif" style="width: 256px; float: right; margin: 0em 0em 1em 1em;" title="float image">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat autem dolor hic fugit temporibus reiciendis! Error dolorum illo, tenetur consectetur perspiciatis impedit nemo cupiditate magnam reprehenderit quas ipsum mollitia perferendis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam ipsam doloremque reiciendis soluta optio eius, earum pariatur voluptas magni quo cum veritatis itaque deserunt perferendis eaque rerum est corrupti.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti alias, quod deserunt voluptate voluptatibus veniam doloribus sapiente quas minus, officia omnis ducimus eos modi accusantium numquam rem accusamus! Repudiandae, deserunt.
+            </p>
+        </div>
+
+        <img src="Images/mouse_guard.jpg" alt="mouse_guard.img" usemap="#mouse-map" title='Click on the "Mouse Guard" title!'>
+        <map name="mouse-map">
+            <area shape="rect" coords="240, 30, 760, 160" href="http://www.mouseguard.net/" alt="mouse-guard-title.area" target="_blank">
+            <area shape="circle" coords="250, 650, 100" href="" alt="">
+        </map><br>
+
+        <picture title="picture! change the browser size.">
+            <source media="(min-width: 1280px)" srcset="Images/andrei.gif">
+                <img src="Images/balsamiq icon.png" alt="">
+        </picture><hr>
+
+        <table>
+            <caption>Table Caption</caption>
+            <tr>
+                <th>Table Header 1</th>
+                <th>Table Header 2</th>
+                <th>Table Header 3</th>
+            </tr>
+            <tr>
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Rowspan</td>
+                <td colspan="2">Colspan 1</td>
+            </tr>
+            <tr>
+                <td>Table Data 3</td>
+            </tr>
+        </table><hr>
+
+        <h2>Unordered and Ordered Lists</h2>
+        <ul style="list-style-type: circle;">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ul>
+        <ol type="a">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ol>
+
+        <h2>Description List</h2>
+        <dl>
+            <dt>Description Term 1</dt>
+                <dd>Description Data 1</dd>
+                <dd>Description Data 2</dd>
+            <dt>Description Term 2</dt>
+                <dd>Description Data 1</dd>
+                <dd>Description Data 2</dd>
+        </dl>
+
+        <h2>Nested List</h2>
+        <ul>
+            <li>
+                Weapons
+                <ol>
+                    <li>Swords</li>
+                    <li>Spears</li>
+                </ol>
+            </li>
+            <li>
+                Armors
+                <ol start="3">
+                    <li>Helmets</li>
+                    <li>Gloves</li>
+                </ol>
+            </li>
+        </ul><hr>
+
+        <script>
+            function myFunction() {
+                document.getElementById("top").style.color = "green";
+            }
+        </script>
+        <button onclick="funcTest()">
+            Click on me to call a function that change h1 on #top!
+        </button>
+
+        <p>
+            this paragraph has <kbd>keyboard input</kbd>
+        </p>
+        <p>
+            this paragraph has <samp>samp output</samp>
+        </p>
+        <pre>
+            <code>
+                n1 = 6;
+                n2 = 8;
+                med = (n1 + n2) / 2;
+            </code>
+        </pre>
+        <var>media</var> = 5;<hr>
+
+        <form action="/action_page.php" target="_blank">
+            <fieldset>
+                <legend>/form/fieldset/legend</legend>
+                First Name:<br>
+                <input type="text" name="firstname"><br>
+                <input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="gender" value="female">Female<br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form><hr>
+
+        <select name="select" id="">
+            <option value="op1">option 1</option>
+            <option value="op2" selected>option 2</option>
+            <option value="op3">option 3</option>
+        </select><br><br>
+        <select name="select" id="" size="2">
+            <option value="op1">option 1</option>
+            <option value="op2">option 2</option>
+            <option value="op3">option 3</option>
+            <option value="op4" selected>option 4</option>
+        </select><br><br>
+        <select name="select" id="" size="4" multiple>
+            <option value="op1">option 1</option>
+            <option value="op2">option 2</option>
+            <option value="op3">option 3</option>
+            <option value="op4">option 4</option>
+        </select><br><br>
+
+        <textarea name="" id="" cols="30" rows="10">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque nam cupiditate amet hic debitis laudantium in, voluptatem, culpa quam porro architecto, maiores odio. Neque harum, optio pariatur totam debitis corrupti.
+        </textarea><br>
+        <button>click me!</button><br>
+
+        <form action="">
+            <input list="options" placeholder="datalist">
+            <datalist id="options">
+                <option value="option1"></option>
+                <option value="option2"></option>
+                <option value="option3"></option>
+            </datalist>
+        </form><hr>
+
+        <h2>input types</h2>
+        text<br>
+        password<br>
+        submit<br>
+        reset<br>
+        radio<br>
+        checkbox<br>
+        button<br>
+        color<br>
+        date<br>
+        datetime-local<br>
+        email<br>
+        month<br>
+        number<br>
+        range<br>
+        search<br>
+        tel<br>
+        time<br>
+        url<br>
+        week<br>
+
+        <h2>input attributes</h2>
+    </body>
+</html>
